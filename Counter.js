@@ -24,7 +24,7 @@ function reset() {
 function save() {
     console.log("Clicked!")
     let countStr = count + " - "
-    saveEl.textContent += countStr //.InnerText 
+    saveEl.textContent += countStr //.InnerText only display human readable content (Use TextContent)
     
 
 }
