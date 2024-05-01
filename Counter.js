@@ -24,7 +24,7 @@ function reset() {
 function save() {
     console.log("Clicked!")
     let countStr = count + " - "
-    saveEl.innerText += countStr 
+    saveEl.textContent += countStr //.InnerText 
     
 
 }
@@ -33,5 +33,5 @@ function saveReset()
 {
     console.log("Triggers saveRest!")
     count = 0
-    saveResetV.innerText = count
+    saveResetV.textContent = count
 }
