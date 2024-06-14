@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subway Counter</title>
     <link rel="stylesheet" href="style.css">
-
-    <h1>People Entered: </h1>
-    <h2 id="countNo">0</h2>
 </head>
+
 <body>
-    
-    <button id="incr-but" onclick="increment()">Increment</button> 
-    <button id="resetNow" onclick="reset()">Reset</button>
-    <button id="save-btm" onclick="save(); saveReset()">Save</button>
-    <p id="save-para">Previous entries: </p>
-    <script src="Counter.js"></script>
+    <div class="container">
+        <div class="headers">
+            <h1>People Entered: </h1>
+            <h2 id="countNo">0</h2>
+        </div>
+        <div class="buttons">
+            <button id="incr-but" onclick="increment()">Increment</button>
+            <button id="resetNow" onclick="reset()">Reset</button>
+            <button id="save-btm" onclick="save(); saveReset()">Save</button>
+            <button id="save-btm" onclick="resetEntries()">Reset Entries</button>
+        </div>
+        <div class="text">
+            <p id="save-para">Previous entries: </p>
+        </div>
+        <script src="Counter.js"></script>
+    </div>
 </body>
+
 </html>

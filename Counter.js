@@ -25,13 +25,22 @@ function save() {
     console.log("Clicked!")
     let countStr = count + " - "
     saveEl.textContent += countStr //.InnerText only display human readable content (Use TextContent)
-    
+
 
 }
 let saveResetV = document.getElementById("countNo")
-function saveReset()
-{
+function saveReset() {
     console.log("Triggers saveRest!")
     count = 0
     saveResetV.textContent = count
+}
+
+function resetEntries() {
+    console.log("Clicked!")
+
+    let newText = "Previous entries:"; 
+
+    saveEl.innerText = newText;
+    alert("Entries are reset!")
+
 }
